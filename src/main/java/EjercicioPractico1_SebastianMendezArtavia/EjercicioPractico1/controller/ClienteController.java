@@ -19,7 +19,7 @@ public class ClienteController {
     private ClienteService clienteService;
 
     @GetMapping("/listado")
-    public String inicio(Model model) {
+    public String listarMedicamentos(Model model) {
         var clientes = clienteService.getClientes();
         model.addAttribute("clientes", clientes);
         model.addAttribute("totalClientes", clientes.size());

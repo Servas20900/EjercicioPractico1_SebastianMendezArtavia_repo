@@ -19,7 +19,7 @@ public class FacturaController {
     private FacturaService facturaService;
 
     @GetMapping("/listado")
-    public String inicio(Model model) {
+    public String listarMedicamentos(Model model) {
         var facturas = facturaService.getFacturas();
         model.addAttribute("facturas", facturas);
         model.addAttribute("totalFacturas", facturas.size());

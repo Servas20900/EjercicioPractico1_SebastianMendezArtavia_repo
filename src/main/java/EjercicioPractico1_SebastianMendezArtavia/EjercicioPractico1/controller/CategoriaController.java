@@ -19,7 +19,7 @@ public class CategoriaController {
     public String listarMedicamentos(Model model) {
         var categorias = categoriaService.getCategorias();
         model.addAttribute("categorias", categorias);
-        model.addAttribute("totalMedicamentos", categorias.size());
+        model.addAttribute("totalCategorias", categorias.size());
         return "/categoria/listado";
     }
 }
