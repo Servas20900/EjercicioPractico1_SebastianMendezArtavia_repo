@@ -20,8 +20,8 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <ul class="navbar-nav">
-                            <li class="nav-item px-2"><a href="/medicamentos/ver">Ver Medicamentos</a></li>
-                            
+                            <li class="nav-item px-2"><a class="nav-menu-link nav-link" th:href="@{/medicamento/listado}">Listado Medicamentos </a></li>
+                            <li class="nav-item px-2"><a class="nav-menu-link nav-link" th:href="@{/categoria/listado}">Listado Categorias </a></li>
                         </ul>
                     </div>
                 </div>
@@ -30,9 +30,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <h1> ServasDrugStore </h1>
-                            <br>
-                            <i class="fa-solid fa-location-dot"></i><p>ServasDrugStore localizada en el centro de heredia</p>
+                            <p> La farmacia de Heredia </p>
                         </div>
                     </div>
                 </div>
@@ -42,6 +40,8 @@
         <footer th:fragment="footer" class="bg-dark text-white mt-5 p-2">
             <div class="container">
                 <div class="col">
+                    <i class="fa-solid fa-location-dot"></i><p>ServasDrugStore localizada en el centro de heredia</p>
+                    <br>
                     <p class="lead text-center">
                         Nos reservamos drecho de admision, para información adicional #7071-1102
                     </p>

@@ -8,27 +8,21 @@
     </head>
     <body>
         <header th:replace="~{layout/plantilla :: header}"/>
-
-        <body>
-            <div th:replace="layout/Plantilla :: header"></div> <!-- Incluye la plantilla -->
-        
             <div class="container mt-4">
-                <h2 class="text-center">Lista de Medicamentos</h2>
+                <h2 class="text-center">Lista de Categorias</h2>
                 <table class="table table-striped table-bordered mt-3">
                     <thead class="table-dark">
                         <tr>
                             <th>Nombre</th>
                             <th>Descripcion</th>
-                            <th>Precio</th>
-                            <th>Stock</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
-                        <tr th:each="medicamento : ${medicamentos}">
-                            <td th:text="${medicamento.nombre}"></td>
-                            <td th:text="${medicamento.descripcion}"></td>
-                            <td th:text="${medicamento.precio}"></td>
-                            <td th:text="${medicamento.stock}"></td>
+                        <tr th:each="categoria : ${categorias}">
+                            <td th:text="${categoria.nombre}"></td>
+                            <td th:text="${categoria.descripcion}"></td>
+
                         </tr>
                     </tbody>
                 </table>
