@@ -12,32 +12,24 @@
     </head>
     <body class="">
         <header th:fragment="header" class="header">
-            <nav class="navbar navbar-expand-sm p-0">
+            <nav class="navbar navbar-expand-sm p-0 bg-dark">
                 <div class="container">
-                    <a th:href="@{/}" class="navbar-brand">ServasDrugStore </a>
+                    <a th:href="@{/}" class="navbar-brand text-white">ServasDrugStore </a>
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <ul class="navbar-nav">
-                            <li class="nav-item px-2"><a class="nav-menu-link nav-link" th:href="@{/medicamento/listado}">Listado Medicamentos </a></li>
-                            <li class="nav-item px-2"><a class="nav-menu-link nav-link" th:href="@{/categoria/listado}">Listado Categorias </a></li>
-                            <li class="nav-item px-2"><a class="nav-menu-link nav-link" th:href="@{/cliente/listado}">Listado Clientes </a></li>
-                            <li class="nav-item px-2"><a class="nav-menu-link nav-link" th:href="@{/factura/listado}">Listado Facturas </a></li>
+                            <li class="nav-item px-2"><a class="nav-menu-link nav-link text-white" th:href="@{/medicamento/listado}">Listado Medicamentos </a></li>
+                            <li class="nav-item px-2"><a class="nav-menu-link nav-link text-white" th:href="@{/categoria/listado}">Listado Categorias </a></li>
+                            <li class="nav-item px-2"><a class="nav-menu-link nav-link text-white" th:href="@{/cliente/listado}">Listado Clientes </a></li>
+                            <li class="nav-item px-2"><a class="nav-menu-link nav-link text-white" th:href="@{/factura/listado}">Listado Facturas </a></li>
 
                         </ul>
                     </div>
                 </div>
             </nav>
-            <section id="main-header" class="bg-dark text-white">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p> La farmacia Herediana </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
         </header>
 
         <footer th:fragment="footer" class="bg-dark text-white mt-5 p-2">
